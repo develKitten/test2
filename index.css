@@ -83,17 +83,10 @@ body, html {
 
 /* container sub */
 .main {
-    width: 100%;
-    max-width: 1200px;
+    width: 50%;
+    max-width: 1000px;
 }
 
-.sub {
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-    width: 55%;
-    max-width: 1300px;
-}
 
 /* Start Button */
 .start-button {
@@ -139,4 +132,15 @@ body, html {
     100% {
       transform: translateY(0);
     }
+}
+
+/* 모바일 화면에서 적용할 스타일 */
+@media screen and (max-width: 768px) {
+    .main {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+   
 }

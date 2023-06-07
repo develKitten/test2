@@ -3,9 +3,10 @@ var playButton = document.getElementById('play-button');
 var intro = document.getElementById('intro');
 var introChildren = intro.children;
 
+intro.classList.add('hide');
+
 for (var i = 0; i < introChildren.length; i++) {
-    intro.style.display = 'none';
-    introChildren[i].style.display = 'none'; 
+    introChildren[i].classList.add('hide'); 
 }
 
 playButton.addEventListener('click', function() {
@@ -15,9 +16,9 @@ playButton.addEventListener('click', function() {
 
 video.addEventListener('ended', function() {
     this.style.display = 'none';
-    intro.style.display = 'block';
+    intro.classList.remove('hide');
 
     for (var i = 0; i < introChildren.length; i++) {
-        introChildren[i].style.display = 'block'; 
+        introChildren[i].classList.remove('hide'); 
     }
 });

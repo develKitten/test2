@@ -20,7 +20,6 @@ playButton.addEventListener('click', function() {
 });
 
 /* after the video is ended */
-
 video.addEventListener('ended', function() {
     this.style.display = 'none';
     background.classList.remove('hide');
@@ -35,12 +34,19 @@ video.addEventListener('ended', function() {
     }
 });
 
-startButton.addEventListener('click', function() {    
-    intro.style.animation = 'fadeOut 1s'; 
+startButton.addEventListener('click', function() {
+    intro.style.animation = 'fadeOut 1s';
     background.style.animation = 'fadeOut 1s';
 
     intro.addEventListener('animationend', function() {
-        
-        window.location.href = 'next_page.html';
+        intro.style.opacity = '0';
+        background.style.opacity = '0';
+
+        setTimeout(function() {
+            intro.style.display = 'none';
+            background.style.display = 'none';
+
+            window.location.href = 'next_page.html';
+        }, 1000);
     });
 });

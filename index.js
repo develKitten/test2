@@ -36,8 +36,8 @@ video.addEventListener('ended', function() {
 });
 
 startButton.addEventListener('click', function() {    
-    intro.style.animation = 'fadeOut 2s'; 
-    background.style.animation = 'fadeOut 2s';
+    intro.style.animation = 'fadeOut 1s'; 
+    background.style.animation = 'fadeOut 1s';
 
     intro.addEventListener('animationend', function() {
         

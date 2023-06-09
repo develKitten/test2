@@ -46,7 +46,7 @@ startButton.addEventListener('click', function() {
             intro.style.display = 'none';
             background.style.display = 'none';
 
-            window.location.href = 'next_page.html';
+            window.location.href = 'story/section1/section.html';
         }, 1000);
     });
 });

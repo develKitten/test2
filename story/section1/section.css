@@ -111,7 +111,12 @@ h3.display-5 {
 #myCarousel {
     max-width: 1000px;
     margin: 0 auto;
-  }
+}
+
+#myCarouse {
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
 .carousel-item img {
     background-color: rgba(0, 0, 0, 0.973);

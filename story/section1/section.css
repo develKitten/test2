@@ -149,8 +149,8 @@ h3.display-5 {
 }
 
 @media (max-width: 900px) {
-    *, body {
-        overflow-x: hidden;
+    body {
+        width: 100%;
     }
 
     .text {
@@ -172,6 +172,9 @@ h3.display-5 {
 }
 
 @media (max-width: 767px) {
+    html, body {
+        overflow-x: hidden !important;
+    }
 
     .video_section {
         padding-top: 0;

@@ -87,7 +87,7 @@
         <div class="image-format">
           <!-- 이미지 -->
           <div id="myCarouse" class="carousel slide  justify-content-center align-items-center" data-ride="carouse0">
-            <img class="d-block w-100" src="img/apple2plus.webp" alt="이미지">
+            <img class="d-block w-100 lazyload" src="img/apple2plus.webp" alt="이미지">
           </div>
 
           <!-- 캡션 -->
@@ -121,7 +121,7 @@
 
         <p class="text">그렇게 그의 컴퓨터 여정은 시작됩니다.</p>
         <div class="embed-responsive embed-responsive-16by9" style="max-width: 1000px; margin: 0 auto; background-color: black;">
-          <video class="embed-responsive-item" controls autoplay>
+          <video class="embed-responsive-item" controls>
             <source src="video/apple.webm" type="video/webm">
             Your browser does not support the video tag.
           </video>
@@ -208,7 +208,7 @@
           <!-- 캡션 -->
           <div class="cap-box">
             <p class="caption">
-              <a class="caption_font" data-toggle="collapse" href="#img1" role="button" aria-expanded="false"
+              <a class="caption_font lazyload" data-toggle="collapse" href="#img1" role="button" aria-expanded="false"
                 aria-controls="img1">
                 마이크로소프트웨어 창간지 <설명 보기>
               </a>
@@ -283,6 +283,7 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lazysizes.min.js"></script>
   <script src="section.js"></script>
 
 </body>

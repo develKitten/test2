@@ -102,6 +102,10 @@
     padding: 0 calc(var(--baseline) * 1.8);
     transform: rotateY(180deg) translateZ(1px);
   }
+
+  label {
+    margin-bottom: 0 !important;
+  }
   
   /* ... CSS properties for other classes ... */
   

@@ -7,8 +7,9 @@
 
   <link href="img/t-img.png" rel="shortcut icon" type="image/x-icon">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="section.css">
-
+  <link rel="stylesheet" href="card.css"> 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -71,19 +72,20 @@
   <div class="section">
     <div class="row">
       <div class="main-content col-lg-8 mx-auto"> <!-- 본문 -->
-        <!----------------------------- 변형 컴퓨터 바이러스의 범람 -------------------------------->
-        <p class="text"><span class="sub-title">변형 컴퓨터 바이러스의 범람</span></p>
-        <p class="text">1988년 기준으로 국내에 상륙했던 컴퓨터 바이러스는 한 종이었지만, 1989년이 되자 여러 바이러스들이 출몰하여 사람들에게 피해를 입히게 됩니다.</p>
-
-        <p class="text">국내 피해가 컸던 바이러스 중 하나인 <b>LBC 바이러스</b>는 하드 디스크에도 감염시켜, 정상적으로 컴퓨터를 사용할 수 없는 상태로 만드는 무서운 바이러스였습니다.
+        <!----------------------------- 변형 컴퓨터 바이러스의 등장 -------------------------------->
+        <p class="text"><span class="sub-title">변형 컴퓨터 바이러스의 등장</span></p>
+        <p class="text">1988년 기준으로 국내에 상륙했던 컴퓨터 바이러스는 하나였지만, 1989년이 되자 여러 바이러스들이 출몰하게 되었고, 본격적으로 사람들에게 피해를 입히게 됩니다.
         </p>
-        <p class="text"><br><br>1989년 9월, 많은 잡지를 통해 LBC 바이러스가 보도된 것을 본 안철수님은, 이 LBC 바이러스를 분석하는 과정에서 큰 충격을 받게 됩니다.</p>
+
+        <p class="text">그 중 국내 피해가 컸던 바이러스인 <b>LBC 바이러스</b>는 하드 디스크에도 감염시켜, 정상적으로 컴퓨터를 사용할 수 없는 상태로 만드는 무서운 바이러스였습니다.
+        </p>
+        <p class="text"><br><br>1989년 9월, 많은 잡지를 통해 LBC 바이러스가 보도된 것을 본 그는, LBC 바이러스를 분석하는 과정에서 큰 충격을 받게 됩니다.</p>
 
         <p><br></p>
         <div class="image-format">
           <!-- 이미지 -->
           <div id="myCarouse" class="carousel slide  justify-content-center align-items-center" data-ride="carouse0">
-            <img class="d-block w-100 lazyload lazyload" src="img/lbc_virus.png" alt="당시 안철수님이 분석한 LBC 바이러스의 특징">
+            <img class="d-block w-100 lazyload lazyload" src="img/lbc_virus.png" alt="분석된 LBC 바이러스의 특징">
           </div>
 
           <!-- 캡션 -->
@@ -96,7 +98,7 @@
             </p>
             <div class="collapse" id="img1">
               <div class="card card-body">
-                LBC 바이러스는 1989년 10월 김한수님에 의해 명명된 바이러스로서, 플로피 디스크 뿐만 아니라 하드디스크를 망가뜨리는 능력이 있어 많은 사람들에게 큰 피해를 주었습니다.
+                LBC 바이러스는 1989년 10월 김한수씨에 의해 명명된 바이러스로서, 플로피 디스크 뿐만 아니라 하드디스크를 망가뜨리는 능력이 있어 많은 사람들에게 큰 피해를 주었습니다.
                 <br><br>
                 <p style="color: rgb(160, 160, 160);">출처 : 안철수, '백신 II, 브레인 바이러스와 LBC 바이러스 퇴치 프로그램', 마이크로소프트웨어 1989년
                   11월호. pp 214-238.</p>
@@ -106,7 +108,7 @@
         </div>
         <p><br></p>
 
-        <p class="text">이는 첫째, LBC 바이러스는 <b>브레인 바이러스의 변형판</b>이었습니다.</p>
+        <p class="text">이는 첫째, LBC 바이러스는 <b>브레인 바이러스의 변형판</b>이었던 점입니다.</p>
         <p class="text">프로그램의 실행 흐름이 브레인 바이러스와 매우 유사했고 필요없는 기능만 제거된 것이었습니다.</p>
         <p class="text">단지 디스크의 범위 제한을 없애 하드디스크도 감염시킬 수 있게 한 것일 뿐이었지만, 디스크 구조의 차이로 인해 시스템이 파괴되는 능력을 가지게 되었습니다.</p>
 
@@ -151,26 +153,91 @@
         </blockquote>
 
         <p class="text">그러면서 <b>"국내 컴퓨터 사용자들 중에서 이러한 몰지각한 부류가 있다는 사실에 정말 서글픔을 금할 수 없다"</b> 라는 심정을 토로하였습니다.</p>
-        <p class="text"><br><br>그의 마음아픈 외침에도 불구 다양한 국내외 바이러스들이 제작되거나 발견되었고, <br>그가 나서지 않으면 바이러스들은 홀씨처럼 퍼져나가 사람들의 컴퓨터를
+        <p class="text"><br><br>그의 마음아픈 외침에도 불구 이후에도 다양한 국내외 바이러스들이 제작되거나 발견되었고, <br>그가 나서지 않으면 바이러스들은 홀씨처럼 퍼져나가 사람들의
+          컴퓨터를
           위협하는 안타까운 현상이 발생했습니다.<br></p>
-        <p class="text">그런 악의적인 국내 컴퓨터 바이러스 제작자들에 대해, 다음과 같이 생각을 적었습니다.<br></p>
+        <p class="text">그런 악의적인 국내 컴퓨터 바이러스 제작자들에 대해, 그는 다음과 같이 호소했습니다.<br><br></p>
 
         <blockquote class="blockquote p-3 rounded"><!-- 인용문구 -->
           <p class="quote-header"><img src="img/따옴표.png" class="quote-dot" /></p>
           <p class="mb-0">외국의 컴퓨터 바이러스 제작자들에게는 직접 손을 쓸 수 없더라도, 국내 바이러스 제작자들에 대해서는 정말 안타깝게 호소하고 싶은 심정이다.</p>
           <p class="mb-0"><br>우리들은 하루 빨리 선진국들을 따라잡기 위해 힘을 합쳐 노력하고 있다. 좋은 프로그램을 만드는데도 시간이 부족한 우리 프로그래머들을 도와주지는 못할 망정,
-            <b>한국산 바이러스를 만들어서 프로그래머들의 시간을 빼앗는 행위는 결국 우리의 발전을 스스로 막는 행위일 것</b>이다.</p>
+            <b>한국산 바이러스를 만들어서 프로그래머들의 시간을 빼앗는 행위는 결국 우리의 발전을 스스로 막는 행위일 것</b>이다.
+          </p>
           <p class="mb-0"><br>한 쪽에서는 컴퓨터 바이러스를 열심히 만들고, 다른 쪽에서는 이에 대항하는 백신 프로그램을 열심히 만든다면 결국 남는 것은 하나도 없다.</p>
           <br>
           <footer class="blockquote-footer">「별난 컴퓨터 의사 안철수」, 컴퓨터 바이러스를 만드는 사람들 中 </footer>
         </blockquote>
 
-        <p><br></p>
-        <!----------------------------- 변형 컴퓨터 바이러스의 범람 -------------------------------->
-        <p class="text"><span class="sub-title">변형 컴퓨터 바이러스의 범람</span></p>
-        <p class="text">1988년 기준으로 국내에 상륙했던 컴퓨터 바이러스는 한 종이었지만, 1989년이 되자 여러 바이러스들이 출몰하여 사람들에게 피해를 입히게 됩니다.</p>
+        <p class="text"><br>계속 생성되는 변형 바이러스들로 인한 피해를 걱정했던 그는, 이후 바이러스 분석글을 더 이상 공개하지 않았습니다.</p>
+        <p class="text">대신, 그 바이러스로 인한 증상, 치료법 및 예방법에 대한 글들을 주로 작성하였습니다.</p>
+        <p class="text"><br></p>
 
-        <p>던 반면, 1989년에는 6종, 1990년에는 28종으로 기하급수적으로 증가했습니다.</p>
+        <p><br></p>
+        <!----------------------------- 컴퓨터 바이러스의 범람 -------------------------------->
+        <p class="text"><span class="sub-title">컴퓨터 바이러스의 범람</span></p>
+        <p class="text">그러던 중, 1990년 국내 사용자들은 무려 <b>28개의 국내외 컴퓨터 바이러스</b>들을 맞이하였습니다.</p>
+        <p class="text">특히 특정 날짜가 되면 활발하게 활동하는 컴퓨터 바이러스들이 많아지게 되었으며, 이제는 디스크 뿐만 아니라 파일까지 파괴하거나 삭제하는 악랄한 컴퓨터 바이러스들이 판을 쳤습니다.</p>
+        <p class="text"><br>안철수님은 당시 방문연구원이나 교수직으로 인해 바쁜 상태셨지만, 전국가적인 피해를 손 놓고 볼 수 없었기에 결국 자신의 시간을 쪼개어 백신 프로그램을 개발하셨습니다.<br><br></p>
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide card">
+              <div class="thumbnail">
+                <img
+                  src="img/V2.png"
+                  alt="" />
+              </div>
+              <a href="#" class="title-container">
+                <h3>VACCINE II</h3>
+              </a>
+              <div class="description">
+                백신II 프로그램은 1989년 10월 개발되었으며, brain 바이러스와 LBC 바이러스를 퇴치할 수 있는 프로그램이었습니다.
+              </div>
+            </div>
+
+            <div class="swiper-slide card">
+              <div class="thumbnail">
+                <img
+                  src="img/v2_plus_1_2.PNG"
+                  alt="" />
+              </div>
+              <a href="#" class="title-container">
+                <h3>V2 Plus</h3>
+              </a>
+              <div class="description">
+                백신II Plus는 1989년 12월에 개발되었으며, 이전 버전에 예루살렘, 스톤드 등 다양한 바이러스들의 제거 기능이 추가되었습니다.
+              </div>
+            </div>
+
+            <div class="swiper-slide card">
+              <div class="thumbnail">
+                <img
+                  src="img/V3.png"
+                  alt="" />
+              </div>
+              <a href="#" class="title-container">
+                <h3>V3 테스트 버전</h3>
+              </a>
+              <div class="description">
+                백신III 테스트 버전은 1990년 12월에 공개되었으며, 총 35종의 바이러스를 치료할 수 있는 복합적인 기능을 갖췄습니다.
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <p class="text"><br>아마추어인 자신이 혼자서 막을 수 있다면 다른 프로그래머들은 다른 좋은 프로그램을 만드는 일에 전념할 수 있을 것이라 생각했던 안철수.</p>
+        <p class="text">그는 계속하여 백신 프로그램을 보급한 이유에 대해 다음과 같이 회고했습니다.</p>
+
+        <blockquote class="blockquote p-3 rounded"><!-- 인용문구 -->
+          <p class="quote-header"><img src="img/따옴표.png" class="quote-dot" /></p>
+          <p class="mb-0">나는 컴퓨터 바이러스에 의한 전국가적인 피해를 최소한으로 줄이기 위해서, 지난 시간동안 내 나름대로 정열을 바쳐 백신 프로그램을 만들어 왔다.</p>
+          <p class="mb-0">또한, 우리나라가 빠른 시일내에 정보화 사회로 발전하는데 조금이라도 보탬이 되었으면 하는 바람에서 백신 프로그램을 무료로 보급해 왔다.</p>
+          <br>
+          <footer class="blockquote-footer">「별난 컴퓨터 의사 안철수」, 백신 연구소의 설립을 추진하면서 中 </footer>
+        </blockquote>
+
 
         <!-- Button to next section -->
         <a class="btn btn-dark mt-4" href="#">모든 내용은 7월에 공개됩니다 🙂</a>
@@ -189,6 +256,26 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lazysizes.min.js"></script>
     <script src="section.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      let swiper = new Swiper(".swiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          600: {
+            slidesPerView: 2,
+          },
+        },
+      });
+    </script>
 
 </body>
 

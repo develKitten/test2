@@ -7,6 +7,7 @@
   width: 300px;
   text-align: center;
   box-shadow: 0 4px 40px -8px rgba(0, 0, 0, 0.2);
+  padding-bottom: 30px;
 }
 
 .swiper .thumbnail {
@@ -40,6 +41,11 @@
   line-height: 1.8;
   color: #333;
   padding: 8px;
+}
+
+
+.swiper-pagination-bullet-active {
+  background: #202020 !important;
 }
 
 .swiper-button-next,

@@ -139,22 +139,6 @@ h3.display-5 {
     height: 450px;
 }
 
-.carousel-control-next-icon:after {
-    display: inline-block;
-    content: "";
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23999999' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-    width: 2rem;
-    height: 2rem;
-}
-
-.carousel-control-prev-icon:after {
-    display: inline-block;
-    content: "";
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23999999' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l1.5 1.5-2.5 2.5 2.5 2.5-1.5 1.5-4-4 4-4z'/%3E%3C/svg%3E");
-    width: 2rem;
-    height: 2rem;
-}
-
 
 /* 캡션 */
 .caption {
@@ -175,6 +159,8 @@ h3.display-5 {
     text-decoration: none !important;
     color: rgb(151, 151, 151);
 }
+
+/* MindMap */
 
 @media (max-width: 900px) {
     body {
@@ -203,7 +189,9 @@ h3.display-5 {
 
 }
 
+
 @media (max-width: 767px) {
+    
     html, body {
         overflow-x: hidden !important;
     }
